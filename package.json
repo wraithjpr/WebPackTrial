@@ -41,5 +41,8 @@
       "_",
       "require"
     ]
+  },
+  "dependencies": {
+    "lodash": "^4.17.5"
   }
 }
