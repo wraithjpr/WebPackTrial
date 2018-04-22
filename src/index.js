@@ -9,6 +9,9 @@ require('./style.css');
 // import icon
 const Icon = require('./icons8-happy-50.png');
 
+// import data
+const Data = require('./data.xml');
+
 function component () {
   var element = document.createElement('div');
 
@@ -21,6 +24,8 @@ function component () {
   myIcon.src = Icon;
   element.appendChild(myIcon);
 
+  console.log(Data);
+  
   return element;
 }
 
