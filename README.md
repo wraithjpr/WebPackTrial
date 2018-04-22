@@ -6,3 +6,30 @@ I didn't do the [Loading Fonts part](https://webpack.js.org/guides/asset-managem
 
 The project structure is adapted from Andras Toth's [Codeship post](https://blog.codeship.com/advanced-node-js-project-structure-tutorial/): _Toth, Andras; Advanced Node.js Project Structure Tutorial; 2018-04-03_.
 
+```text
+.
+|-- config
+|-- dist
+|   |-- 4cf91b873adbd393ad9de843ae08c5f0.png
+|   |-- bundle.js
+|   `-- index.html
+|
+|-- .git
+|-- node_modules
+|-- src
+|   |-- app
+|   |-- www
+|   |-- data.xml
+|   |-- icons8-happy-50.png
+|   |-- index.js
+|   `-- style.css
+|
+|-- .eslintrc.js
+|-- .gitignore
+|-- LICENSE.txt
+|-- package.json
+|-- package-lock.json
+|-- README.md
+`-- webpack.config.js
+```
+
