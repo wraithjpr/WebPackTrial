@@ -4,6 +4,7 @@
   "description": "Trying out Webpack and Babel before I use them for dev projects.",
   "private": true,
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "eslint": "eslint ./src",
     "fix": "eslint --fix ./src",
     "lint": "semistandard \"./src/**/*.js\" && ./node_modules/.bin/eslint ./src",
