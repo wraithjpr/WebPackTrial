@@ -7,7 +7,7 @@
     "build": "webpack --config webpack.config.js",
     "eslint": "eslint ./src",
     "fix": "eslint --fix ./src",
-    "lint": "semistandard \"./src/**/*.js\" && ./node_modules/.bin/eslint ./src",
+    "lint": "semistandard \"./src/**/*.js\" && eslint ./src",
     "semistandard": "semistandard \"./src/**/*.js\"",
     "standard": "standard \"./src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +20,7 @@
   "author": "James Wraith",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^0.28.11",
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
     "eslint-config-standard": "^11.0.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "semistandard": "^12.0.1",
     "standard": "^11.0.1",
+    "style-loader": "^0.21.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   },
