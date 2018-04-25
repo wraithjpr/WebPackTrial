@@ -11,17 +11,18 @@ The project structure is adapted from Andras Toth's [Codeship post](https://blog
 |-- config
 |-- dist
 |   |-- 4cf91b873adbd393ad9de843ae08c5f0.png
-|   |-- bundle.js
-|   `-- index.html
+|   |-- app.bundle.js
+|   |-- index.html
+|   `-- print.bundle.js
 |
 |-- .git
 |-- node_modules
 |-- src
-|   |-- app
+|   |-- api
 |   |-- www
-|   |-- data.xml
 |   |-- icons8-happy-50.png
 |   |-- index.js
+|   |-- print.js
 |   `-- style.css
 |
 |-- .eslintrc.js

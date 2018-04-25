@@ -3,17 +3,17 @@
 // import _ from 'lodash';
 const _ = require('lodash');
 
+// import printMe function
+const printMe = require('./print.js');
+
 // import style sheet
 require('./style.css');
 
 // import icon
 const Icon = require('./icons8-happy-50.png');
 
-// import data
-const Data = require('./data.xml');
-
 function component () {
-  var element = document.createElement('div');
+  const element = document.createElement('div');
 
   // Lodash, now imported by this script.
   element.innerHTML = _.join(['Hello,', 'webpack.'], ' ');
@@ -24,9 +24,20 @@ function component () {
   myIcon.src = Icon;
   element.appendChild(myIcon);
 
-  console.log(Data);
-  
+  return element;
+}
+
+function componentPrinter () {
+  const element = document.createElement('div');
+  const btn = document.createElement('button');
+
+  btn.innerHTML = 'Click me and check the console!';
+  btn.onclick = printMe;
+
+  element.appendChild(btn);
+
   return element;
 }
 
 document.body.appendChild(component());
+document.body.appendChild(componentPrinter());
