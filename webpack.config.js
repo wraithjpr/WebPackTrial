@@ -4,20 +4,28 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
+// Resolve the path to the directory containing the source code.
+const sourcePath = path.resolve(__dirname, 'src/www');
+
+// Resolve the path to the directory containing the files for  distribution
+const distPath = path.resolve(__dirname, 'dist');
+
+
 module.exports = {
+  mode: 'development',
   entry: {
-    app: './src/index.js',
-    print: './src/print.js'
+    app: path.join(sourcePath, 'index.js'),
+    print: path.join(sourcePath, 'print.js')
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin([distPath]),
     new HtmlWebpackPlugin({
-      title: 'Output Management'
+      template: path.join(sourcePath, 'index.html')
     })
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: distPath
   },
   module: {
     rules: [

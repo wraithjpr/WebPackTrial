@@ -20,10 +20,11 @@ The project structure is adapted from Andras Toth's [Codeship post](https://blog
 |-- src
 |   |-- api
 |   |-- www
-|   |-- icons8-happy-50.png
-|   |-- index.js
-|   |-- print.js
-|   `-- style.css
+|       |-- icons8-happy-50.png
+|       |-- index.html
+|       |-- index.js
+|       |-- print.js
+|       `-- style.css
 |
 |-- .eslintrc.js
 |-- .gitignore
