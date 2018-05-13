@@ -10,6 +10,7 @@
     "lint": "semistandard \"./src/**/*.js\" && eslint ./src",
     "semistandard": "semistandard \"./src/**/*.js\"",
     "standard": "standard \"./src/**/*.js\"",
+    "start": "webpack-dev-server --open 'firefox' --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.config.js"
   },
@@ -37,6 +38,7 @@
     "style-loader": "^0.21.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.4",
     "xml-loader": "^1.2.1"
   },
   "semistandard": {

@@ -18,6 +18,9 @@ module.exports = {
     print: path.join(sourcePath, 'print.js')
   },
   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: distPath
+  },
   plugins: [
     new CleanWebpackPlugin([distPath]),
     new HtmlWebpackPlugin({
