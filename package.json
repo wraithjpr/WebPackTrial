@@ -10,7 +10,8 @@
     "lint": "semistandard \"./src/**/*.js\" && eslint ./src",
     "semistandard": "semistandard \"./src/**/*.js\"",
     "standard": "standard \"./src/**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --config webpack.config.js"
   },
   "keywords": [
     "trial",
