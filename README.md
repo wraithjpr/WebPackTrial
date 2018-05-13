@@ -32,6 +32,7 @@ The project structure is adapted from Andras Toth's [Codeship post](https://blog
 |-- package.json
 |-- package-lock.json
 |-- README.md
+|-- server.js
 `-- webpack.config.js
 ```
 
