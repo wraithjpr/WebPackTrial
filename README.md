@@ -4,6 +4,8 @@ This trial works it's way through implementing the webpack guides at [webpack.js
 
 I didn't do the [Loading Fonts part](https://webpack.js.org/guides/asset-management/#loading-fonts) in the Asset Management section because I didn't have suitable font files available. Anyway, I'll probably use [Google Fonts](https://fonts.google.com/) when I build my web sites.
 
+I'm not interested in the [hot module replacement](https://webpack.js.org/guides/hot-module-replacement/) feature. Cannot see how adding <code>if (module.hot) {}</code> code to index.js is a good thing... we'll never update code in real time in production so all that hot module code is redundant and is clutter. DON'T USE IT!!
+
 The project structure is adapted from Andras Toth's [Codeship post](https://blog.codeship.com/advanced-node-js-project-structure-tutorial/): _Toth, Andras; Advanced Node.js Project Structure Tutorial; 2018-04-03_.
 
 ```text
